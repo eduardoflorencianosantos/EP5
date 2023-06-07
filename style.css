@@ -1,6 +1,6 @@
 /* Parte visual do body */
 body {
-    background-color: #1395e0;
+    background-color: #363636;
     margin: 0;
 }
 
@@ -37,7 +37,7 @@ body {
 
 /* Parte visual do header */
 header {
-    background-color: #363636;
+    background-color: black;
 
 }
 
@@ -50,16 +50,17 @@ header {
 }
 
 .headera:hover {
-    color: #1395e0;
+    color: white;
     padding-bottom: 0;
     font-size: x-large;
-    border-bottom: 5px solid #1395e0;
+    border-bottom: 5px solid white;
 }
 
 /* Parte visual do footer */
 footer {
-    background-color: #363636;
+    background-color: black;
 }
+
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* Formulário */
