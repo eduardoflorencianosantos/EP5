@@ -1,17 +1,17 @@
 /* Parte visual do body */
 body {
-    margin: 0;
-    background-color: gray;
+    margin: 0; /* Tira as margens que tem no site */
+    background-color: gray; /* Cor de fundo cinza */
 }
 
 /* Estrutura do grid */
 body {
-    display: grid;
+    display: grid; /* Insinua que estou usando grid para o documento HTML */
     grid-template-areas:
         "cc cc cc"
-        "bb oo oo"
+        "bb oo oo" /* Lugares determinados onde ficarão as colunas */
         "pp pp pp";
-    grid-gap: 20px;
+    grid-gap: 20px; /*Espaço entre as colunas */
 }
 
 /* Header */
@@ -22,13 +22,15 @@ body {
 /* Aside */
 .bracos {
     grid-area: bb;
-    background-color: #C0C0C0;
+    background-color: #C0C0C0; /* Cor de fundo branco */
+    border-radius: 20px;
 }
 
 /* Main */
 .corpo {
     grid-area: oo;
-    background-color: #C0C0C0;
+    background-color: #C0C0C0; /* Cor de fundo branco */
+    border-radius: 20px;
 }
 
 /* Footer */
@@ -38,8 +40,8 @@ body {
 
 /* Parte visual do header */
 header {
-    background-color: black;
-    padding: 10px;
+    background-color: black; /* Cor de fundo do header preto */
+    padding: 10px; /* Separação dos elementos no header da borda */
 }
 
 /**/
@@ -86,7 +88,7 @@ nav a::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.7s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /**/
@@ -94,33 +96,16 @@ nav a:hover::after {
     width: 80%;
 }
 
-/**/
-.menu button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    margin-right: 20px;
-    background-color: black;
-}
-
-/**/
-.menu button i {
-    font-size: 25px;
-    color: white;
-}
-
-.menu button a {
-    color: white;
-}
 
 /* Parte visual do botão*/
 .cor {
     /* Botão preto */
     background-color: black;
-    /* Comprar amarelo */
-    color: yellow;
+    /* Letras brancas */
+    color: white;
     /* Tirar a linha que fica em baixo do link */
     text-decoration: none;
+    border-radius: 10px;
 }
 
 /* Parte visual do footer */
@@ -145,7 +130,6 @@ footer .container h3 {
     margin-bottom: 16px;
     font-weight: 600;
 }
-
 
 /*-----------------------------------------------------------------------------------------------------------*/
 /* Formulário */
