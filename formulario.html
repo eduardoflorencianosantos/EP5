@@ -9,20 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça o cadastro na Fut Unity</title>
 </head>
-
 <body>
     <!---->
     <header class="cabeca">
         <div class="container"><!---->
             <!---->
             <div class="logo">
-                <img src="Imagens/logo.png">
+                <a href="index.html"><img src="Imagens/logo.png"></a>
             </div>
 
             <div class="camisetas"><!---->
                 <nav>
                     <!---->
-                    <a href="index.html">Voltar ao início</a>
                 </nav>
             </div>
 
@@ -31,40 +29,48 @@
             </div>
         </div>
     </header>
-    <main class="corpo">
+    <div class="corpo">
         <div>
-            <h1>Cadastro do cliente</h1>
+            <h1>Criar conta</h1>
             <p>Preencha o formulário abaixo</p>
         </div>
-        <form action="#" method="post">
-            <fieldset>
-                <div class="bloco">
-                    <label for="name">Nome</label>
-                </div>
-            </fieldset>
-
-        </form>
-
-    </main>
-    <!---->
-    <aside class="bracos">
-        <h2>Promoções</h2>
-    </aside>
-   <!---->
-   <footer class="pernas">
+    <form action="#" method="post">
+        <fieldset>
+            <div class="bloco">
+                <label for="nome_aluno">Nome completo</label>
+                <input type="text" name="nome_cliente" id="nome_cliente">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="bloco">
+                <label for="email_cliente">E-mail ou telefone</label>
+                <input type="email" name="email_cliente" id="email_cliente">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="bloco">
+                <label for="senha_cliente">Senha</label>
+                <input type="password" name="senha_cliente" id="senha_cliente">
+            </div>
+        </fieldset>
+        <fieldset>
+    </form>        
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </div>   
+ <!---->
+ <footer class="pernas">
     <div class="container">
         <ul>
             <h3>Sobre a loja</h3>
-            <p>Fut Unity é uma loja de artigos esportivos importados do mundo do futebol. Trabalhamos apenas com
-                fornecedores confiáveis e produtos de alta qualidade, garantindo que você receba o melhor.
-                Oferecemos atendimento personalizado e eficiente, proporcionando uma experiência de compra única.
-                Seja bem-vindo(a) ao Fut Unity!</p>
+            <p>Somos a Fut Unity, uma loja apaixonada por esportes e comprometida em fornecer aos nossos
+                clientes os melhores produtos e serviços. Nós entendemos que uma camisa de time não é apenas um
+                uniforme, mas sim uma parte fundamental da identidade dos torcedores.</p>
         </ul>
         <ul>
             <h3>Marcas</h3>
-            <li>Adidas</li>
             <br>
-            <li>Kapa</li>
+            <li>Adidas</li>
             <br>
             <li>Nike</li>
             <br>
@@ -74,22 +80,26 @@
         </ul>
         <ul>
             <h3>Contatos</h3>
-            <li>(45) 99988-1010</li>
             <br>
-            <li>fut.unity@gmail.com</li>
+            <li>WhatsApp: 5511913373479</li>
             <br>
-            <li>Brasil</li>
+            <li>Telefone: (11) 913373479</li>
+            <br>
+            <li>Email: atendimento@fut.unity.com.br</li>
+            <br>
+            <li>Foz do Iguaçu - PR</li>
         </ul>
         <ul>
             <h3>Redes sociais</h3>
             <div>
-                
+                <img src="Imagens/redes.png">
             </div>
         </ul>
     </div>
-    <div>  
+    <div>
         <hr>
-        <h3>Formas de pagamento:</h3>
+        <h3>Formas de pagamento</h3>
+        <img src="Imagens/pagamento.png">
     </div>
 </footer>
 </body>
