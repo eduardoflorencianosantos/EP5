@@ -1,17 +1,22 @@
 /* Parte visual do body */
 body {
-    margin: 0; /* Tira as margens que tem no site */
-    background-color: gray; /* Cor de fundo cinza */
+    margin: 0;
+    /* Tira as margens que tem no site */
+    background-color: gray;
+    /* Cor de fundo cinza */
 }
 
 /* Estrutura do grid */
 body {
-    display: grid; /* Insinua que estou usando grid para o documento HTML */
+    display: grid;
+    /* Insinua que estou usando grid para o documento HTML */
     grid-template-areas:
         "cc cc cc"
-        "bb oo oo" /* Lugares determinados onde ficarão as colunas */
+        "bb oo oo"
+        /* Lugares determinados onde ficarão as colunas */
         "pp pp pp";
-    grid-gap: 20px; /*Espaço entre as colunas */
+    grid-gap: 20px;
+    /*Espaço entre as colunas */
 }
 
 /* Header */
@@ -22,7 +27,8 @@ body {
 /* Aside */
 .bracos {
     grid-area: bb;
-    background-color: #C0C0C0; /* Cor de fundo branco */
+    background-color: #C0C0C0;
+    /* Cor de fundo branco */
     border-radius: 20px;
 }
 
@@ -40,8 +46,10 @@ body {
 
 /* Parte visual do header */
 header {
-    background-color: black; /* Cor de fundo do header preto */
-    padding: 10px; /* Separação dos elementos no header da borda */
+    background-color: black;
+    /* Cor de fundo do header preto */
+    padding: 10px;
+    /* Separação dos elementos no header da borda */
     color: white;
 }
 
@@ -136,32 +144,34 @@ footer .container h3 {
 /*-----------------------------------------------------------------------------------------------------------*/
 /* Formulário */
 
-label{
+label {
     font-weight: bold;
 }
 
-.letra_normal label{
+.letra_normal label {
     font-weight: 100;
 }
 
-.bloco label{
+.bloco label {
     display: block;
 }
-.bloco{
+
+.bloco {
     float: left;
     margin-right: 5px;
 }
 
-input, select, textarea, button{
+input, select, textarea, button {
     border-radius: 5px;
     color: black;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-.letra_normal input{
+
+.letra_normal input {
     box-shadow: none;
 }
 
-fieldset{
+fieldset {
     border: 0;
 }
 
