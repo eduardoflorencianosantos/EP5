@@ -1,80 +1,20 @@
-* {
 
-    box-sizing: border-box;
-}
 
-body {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-.container_mae {
-    display: flex;
-    width: 1200px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    padding: 10px;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.5s;
-    background-color: white;
-}
-
-.texto a {
-    display: block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: 0.5s;
-}
-
-main img {
-    width: 260px;
-    height: 260px;
-    border-radius: 10px;
-}
-
-.verde {
-    color: green;
-}
-
-aside img {
-    width: 260px;
-    height: 260px;
-    border-radius: 10px;
-}
 
 /* Parte visual do body */
 body {
-    margin: 0;
-    /* Tira as margens que tem no site */
-    background-color: gray;
-    /* Cor de fundo cinza */
+    margin: 0; /* Tira as margens que tem no site */
+    background-color: gray; /* Cor de fundo cinza */
 }
 
 /* Estrutura do grid */
 body {
-    display: grid;
-    /* Insinua que estou usando grid para o documento HTML */
+    display: grid; /* Insinua que estou usando grid para o documento HTML */
     grid-template-areas:
         "cc cc cc"
-        "bb oo oo"
-        /* Lugares determinados onde ficarão as colunas */
+        "bb oo oo" /* Lugares determinados onde ficarão as colunas */
         "pp pp pp";
-    grid-gap: 20px;
-    /*Espaço entre as colunas */
+    grid-gap: 20px; /*Espaço entre as colunas */
 }
 
 /* Header */
@@ -85,8 +25,7 @@ body {
 /* Aside */
 .bracos {
     grid-area: bb;
-    background-color: #C0C0C0;
-    /* Cor de fundo branco */
+    background-color: #C0C0C0; /* Cor de fundo branco */
     border-radius: 20px;
 }
 
@@ -104,10 +43,8 @@ body {
 
 /* Parte visual do header */
 header {
-    background-color: black;
-    /* Cor de fundo do header preto */
-    padding: 10px;
-    /* Separação dos elementos no header da borda */
+    background-color: black; /* Cor de fundo do header preto */
+    padding: 10px; /* Separação dos elementos no header da borda */
     color: white;
 }
 
@@ -199,39 +136,58 @@ footer .container h3 {
     font-weight: 600;
 }
 
+/* Tira as bolinhas das listas que estão no footer */
+li {
+    list-style: none;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 /* Formulário */
 
-label {
+
+.cor_formulario {
+    background-color: #C0C0C0;
+    border-radius: 10px;
+}
+
+
+label{
     font-weight: bold;
 }
 
-.letra_normal label {
+.letra_normal label{
     font-weight: 100;
 }
 
-.bloco label {
+.bloco label{
     display: block;
 }
-
-.bloco {
+.bloco{
     float: left;
     margin-right: 5px;
 }
 
-input, select, textarea, button {
+input, select, textarea, button{
     border-radius: 5px;
     color: black;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-
-.letra_normal input {
+.letra_normal input{
     box-shadow: none;
 }
 
-fieldset {
+fieldset{
     border: 0;
 }
 
+button {
+    background-color: black;
+    color: white;
+}
 /*-----------------------------------------------------------------------------------------------------------*/
 /* Carrinho */
+
+
+.borda {
+    border: 2px black solid;
+}
