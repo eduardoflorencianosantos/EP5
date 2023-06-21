@@ -95,9 +95,9 @@ nav a::after {
     transition: 0.5s ease-in-out;
 }
 
-/**/
+/* Animação das barras dos links */
 nav a:hover::after {
-    width: 80%;
+    width: 110%; /* Tamanho da barra em baixo dos links */
 }
 
 
