@@ -97,7 +97,7 @@ nav a::after {
 
 /* Animação das barras dos links */
 nav a:hover::after {
-    width: 110%; /* Tamanho da barra em baixo dos links */
+    width: 80%; /* Tamanho da barra em baixo dos links */
 }
 
 
