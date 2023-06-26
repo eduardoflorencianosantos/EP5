@@ -1,10 +1,14 @@
-
-
+/* Aplicado em todos os elementos do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Parte visual do body */
 body {
     margin: 0; /* Tira as margens que tem no site */
-    background-color: gray; /* Cor de fundo cinza */
+    background-color: gray; /* Cor de fundo cinza escuro */
 }
 
 /* Estrutura do grid */
@@ -25,15 +29,14 @@ body {
 /* Aside */
 .bracos {
     grid-area: bb;
-    background-color: #C0C0C0; /* Cor de fundo branco */
-    border-radius: 20px;
+    background-color: #C0C0C0; /* Cor de fundo cinza claro */
+    border-radius: 20px; /* Bordas redondas */
 }
 
 /* Main */
 .corpo {
     grid-area: oo;
-    /* Cor de fundo branco */
-    border-radius: 20px;
+    border-radius: 20px; /* Bordas redondas */
 }
 
 /* Footer */
@@ -44,110 +47,111 @@ body {
 /* Parte visual do header */
 header {
     background-color: black; /* Cor de fundo do header preto */
-    padding: 10px; /* Separação dos elementos no header da borda */
-    color: white;
+    padding: 10px; /* Separação dos elementos do header da borda */
+    color: white; /* Cor dos elementos brancos */
 }
 
-/**/
+/* Header */
 .container {
-    max-width: 1080px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    max-width: 1080px; /* Tamanho do container */
+    display: flex; /* Demonstra que está sendo usado flexbox */
+    align-items: center; /* Centralizar elementos */
+    justify-content: space-between;/* Espaçamento dos elementos */
+    
 }
-
-/**/
-.logo, .menu {
-    width: 25%;
-}
-
 
 /* Parte visual da logo*/
 .logo img {
-    width: 200px;
+    width: 200px; /* Tamanho da logo */
 }
 
-/**/
+
+/* Links */
 nav {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Centralizar os links */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte de letra */
 }
 
-/**/
+/* Letras dos links */
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0px 50px 10px 0;
-    font-size: 20px;
-    position: relative;
+    color: white; /* Cor dos links brancas */
+    text-decoration: none; /* Tirar a linha que fica em baixo do link azul */
+    padding: 0px 50px 10px 0; /* Espaço entre os links */
+    font-size: 20px; /* Tamanho da letra */
+    position: relative; /* Posição do elemento */
 }
 
-/**/
+/* Animação das palavras dos links */
 nav a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
+    content: " "; /* Conteúdo do link */
+    width: 0%; /* Remoção da linha branca em baixo dos links */
+    height: 4px; /* Grossura da linha branca em baixo dos links */
+    background-color: white; /* Cor da linha da transição */
+    position: absolute; /* Posição do elemento */
+    bottom: 0; /* Deixa a linha branca em baixo do link*/
+    left: 0; /* Lugar da linha */
+    transition: 0.5s ease-in-out; /* Transição de começar suave e terminar suave*/
 }
 
-/* Animação das barras dos links */
+/* Animação das linhas dos links */
 nav a:hover::after {
-    width: 80%; /* Tamanho da barra em baixo dos links */
+    width: 80%; /* Tamanho da animação da linha em baixo dos links */
 }
 
+/* Parte visual dos ícones */
+.menu img {
+    width: 50px; /* Tamanho dos ícones */
+}
 
-/* Parte visual do botão*/
+/* Parte visual do botão do card*/
 .cor {
-    /* Botão preto */
-    background-color: black;
-    /* Letras brancas */
-    color: white;
-    /* Tirar a linha que fica em baixo do link */
-    text-decoration: none;
-    border-radius: 10px;
+    background-color: black; /* Botão preto */
+    color: white; /* Letras brancas */
+    text-decoration: none; /* Tirar a linha que fica em baixo do link */
+    border-radius: 10px; /* Bordas redondas */
 }
 
 /* Parte visual do footer */
 footer {
-    background-color: black;
-    padding: 10px;
-    color: white;
+    background-color: black; /* Cor de fundo do footer preto */
+    padding: 10px; /* Separação dos elementos do footer da borda */
+    color: white; /* Cor dos elementos brancos */
 }
 
-
-/**/
+/* Estrutura do footer */
 footer .container {
-    display: flex;
+    display: flex; /* Demonstra que está sendo usado flexbox */
 }
 
-/**/
+/* Espaçamento das listas*/
 footer .container ul {
     width: 25%;
 }
 
-/**/
+/* Listas*/
+li {
+    list-style: none; /* Tira as bolinhas da lista */
+}
+
+/* Lugar dos títulos*/
 footer .container h3 {
-    margin-bottom: 16px;
+    margin-bottom: 16px; /* Espaço dos títulos do texto */
     font-weight: 600;
 }
 
-/* Tira as bolinhas das listas que estão no footer */
-li {
-    list-style: none;
+/* Parte visual dos preços */
+.verde {
+    color: green; /* Cor verde dos preços */
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
+
 /* Formulário */
 
-
+/* Parte visual do formulário */
 .cor_formulario {
-    background-color: #C0C0C0;
-    border-radius: 10px;
+    background-color: #C0C0C0; /* Cor de fundo da borda cinza claro */
+    border-radius: 10px; /* Bordas redondas */
 }
 
 
@@ -155,38 +159,48 @@ label{
     font-weight: bold;
 }
 
+
 .letra_normal label{
     font-weight: 100;
 }
 
+
 .bloco label{
     display: block;
 }
+
+
 .bloco{
     float: left;
     margin-right: 5px;
 }
+
 
 input, select, textarea, button{
     border-radius: 5px;
     color: black;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
+
+
 .letra_normal input{
     box-shadow: none;
 }
+
 
 fieldset{
     border: 0;
 }
 
+/* Parte visual do botão */
 button {
-    background-color: black;
-    color: white;
+    background-color: black; /* Cor do botão preto */
+    color: white; /* Cor das letras brancas */
 }
-/*-----------------------------------------------------------------------------------------------------------*/
-/* Carrinho */
 
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Carrinho */
 
 .borda {
     border: 2px black solid;
