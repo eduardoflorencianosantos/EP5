@@ -22,33 +22,27 @@ body {
         "bb oo oo"
         "pp pp pp";
     /* Lugares determinados onde ficarão as colunas */
-    grid-gap: 20px;
+    grid-gap: 50px;
     /*Espaço entre as colunas */
 }
 
-/* Header */
-.cabeca {
+/* Grid do header */
+header {
     grid-area: cc;
 }
 
-/* Aside */
-.bracos {
+/* Grid do aside */
+aside {
     grid-area: bb;
-    background-color: #C0C0C0;
-    /* Cor de fundo cinza claro */
-    border-radius: 20px;
-    /* Bordas redondas */
 }
 
-/* Main */
-.corpo {
+/* Grid do main */
+main {
     grid-area: oo;
-    border-radius: 20px;
-    /* Bordas redondas */
 }
 
-/* Footer */
-.pernas {
+/* Grid do footer */
+footer {
     grid-area: pp;
 }
 
@@ -80,7 +74,6 @@ header {
     width: 200px;
     /* Tamanho da logo */
 }
-
 
 /* Links */
 nav {
@@ -136,6 +129,20 @@ nav a:hover::after {
     /* Tamanho dos ícones */
 }
 
+/* Parte visual do aside */
+aside {
+    background-color: #C0C0C0;
+    /* Cor de fundo cinza claro */
+    border-radius: 20px;
+    /* Bordas redondas */
+}
+
+/* Parte visual do main */
+main {
+    border-radius: 20px;
+    /* Bordas redondas */
+}
+
 /* Parte visual do botão do card*/
 .cor {
     background-color: #000000;
@@ -146,6 +153,12 @@ nav a:hover::after {
     /* Tirar a linha que fica em baixo do link */
     border-radius: 10px;
     /* Bordas redondas */
+}
+
+/* Parte visual dos preços */
+.verde {
+    color: #008000;
+    /* Cor verde dos preços */
 }
 
 /* Parte visual do footer */
@@ -182,12 +195,41 @@ footer .container h3 {
     font-weight: 600;
 }
 
-/* Parte visual dos preços */
-.verde {
-    color: #008000;
-    /* Cor verde dos preços */
+@media only screen and (max-width: 820px) {
+    body{
+        grid-template-areas: 
+        "cc cc"
+        "bb bb"
+        "oo oo"
+        "pp pp";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px 500px 200px;
+    } 
+
+    header img{
+        display: none;
+    } 
 }
 
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "cc"
+        "oo"
+        "pp";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+    
+}
 
 
 /*-----------------------------------------------------------------------------------------------------------*/
