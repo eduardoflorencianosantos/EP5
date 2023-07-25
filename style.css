@@ -1,0 +1,347 @@
+/* Fonte das letras */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Aplicado em todos os elementos do site */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Parte visual do header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+/* */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* */
+.logo {
+    margin-right: 50px;
+}
+
+/* */
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* */
+#toggler, .navbar label {
+    display: none;
+}
+
+/* Tamanho dos ícones */
+li img {
+    width: 50px;
+}
+
+
+
+/* Menu */
+.nav_mobile ul{
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+/* */
+.nav_mobile img{
+    width: 40px;
+}
+
+/* */
+.nav_mobile input[type="checkbox"]{
+     display: none;
+}
+
+/* */
+.nav_mobile nav{
+    background-color: #000000;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -350px;
+    transition: all 0.3s;
+}
+
+/* */
+.nav_mobile a{
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+}
+
+/* */
+.nav_mobile label{
+    position: absolute;
+    z-index: 1;
+}
+
+/* */
+.nav_mobile input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+
+
+
+/* Estrutura dos cards*/
+.elemento_pai {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Cards das camisas*/
+.card {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 3px 6px 9px #000000;
+}
+
+/* Imagem dos cards*/
+.card img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Parte visual dos preços */
+.verde {
+    /* Cor verde dos preços */
+    color: #008000;
+}
+
+/* Botão "Saiba mais"*/
+.texto a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Cor do botão em transição*/
+.texto a:hover {
+    background-color: #008000;
+}
+
+
+
+
+/* Rodapé */
+footer {
+    /* Cor de fundo preto */
+    background-color: #000000;
+    /* Espaçamento da borda */
+    padding: 50px 0;
+    /* Cor das letras brancas */
+    color: #ffffff;
+}
+
+/* Footer inteiro por dentro */
+.container-footer {
+    max-width: 1400px;
+    /* Espaçamento da borda */
+    padding: 0 4%;
+    /* Margem automática */
+    margin: auto;
+}
+
+/* Listas do footer */
+.row-footer {
+    /* Insinua ao class que estou utilizando flexbox */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Espaçamento das listas do footer */
+.footer-col {
+    /* Largura */
+    width: 25%;
+    /* Espaçamento */
+    padding: 0 15px;
+}
+
+/* Títlos das listas */
+.footer-col h4 {
+    /* Tamanho da letra */
+    font-size: 22px;
+    /* Cor da letra */
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Lista */
+.footer-col ul {
+    /* Tiras as bolinhas da lista */
+    list-style: none;
+}
+
+/* Informações dentro da lista */
+.footer-col ul li {
+    /* Espaçamento para não ficarem grudados em baixo do outro */
+    margin: 10px 0;
+}
+
+/* Animação dos links */
+.footer-li ul li a {
+    /* Tamanho da letra */
+    font-size: 16px;
+    text-decoration: capitalize;
+    /* Cor da letra */
+    color: #ffffff;
+    /* Tira as barras dos links */
+    text-decoration: none;
+    font-weight: 300;
+    /* Insinua ao class que estou utilizando block */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-li ul li a:hover {
+    /* Cor da letra */
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+/* Posicionamento dos botões*/
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Personalização dos botões*/
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Altura */
+    height: 2.5rem;
+    /* Largura */
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    /* Borda 8 */
+    border-radius: 50%;
+    /* Tempo de transição da opacidade das redes sociais */
+    transition: all 0.4s;
+    /* Tira as barras dos links */
+    text-decoration: none;
+}
+
+/* Tamanho dos ícones*/
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+/* Tempo da opacidade dos ícones*/
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+/* Cor do Instagram*/
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff980f);
+}
+
+/* Cor do Facebook*/
+#facebook {
+    background-color: #4267b3;
+}
+
+/* Cor do WhatsApp*/
+#whatsapp {
+    background-color: #25d366;
+}
+
+/* Cor do Twitter */
+#twitter {
+    background-color: #6495ED;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+/* Responsivivdade */
+
+/* */
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+/* Responsividade */
+
+/* Tela de tablet */
+@media (max-width:800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+
+/* Tela do celular */
+@media (max-width:600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
