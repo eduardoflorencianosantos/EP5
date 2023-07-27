@@ -9,7 +9,37 @@
     box-sizing: border-box;
 }
 
+/* Estrutura do grid */
+body {
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca cabeca"
+    "braco corpo corpo"
+    "perna perna perna";
+    grid-gap: 5px;
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: auto auto auto;
+}
 
+/* Cabeçalho */
+header {
+    grid-area: cabeca;
+}
+
+/* Conjuntos */
+aside {
+    grid-area: braco;
+}
+
+/* Camisas */
+main {
+    grid-area: corpo;
+}
+
+/* Rodapé */
+footer {
+    grid-area: perna;
+}
 
 /* Parte visual do header */
 header {
@@ -22,6 +52,9 @@ header {
     top: 0;
 }
 
+aside {
+    display: flex;
+}
 /* */
 .navbar {
     display: flex;
@@ -126,7 +159,7 @@ li img {
     border-radius: 10px;
     padding: 10px;
     width: 300px;
-    margin: 20px;
+    margin: 35px;
     text-align: center;
     background-color: #ffffff;
     box-shadow: 3px 6px 9px #000000;
