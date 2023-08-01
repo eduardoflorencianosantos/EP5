@@ -167,6 +167,10 @@ li img {
     box-shadow: 3px 6px 9px #000000;
 }
 
+/* Cor dos cards dos conjuntos */
+#cinza {
+    background-color: #D3D3D3;
+}
 /* Imagem dos cards*/
 .card img {
     width: 250px;
@@ -330,6 +334,14 @@ footer {
 #twitter {
     background-color: #6495ED;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+/* Página do produto */
+
+fieldset {
+    border: 0;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsivivdade */
