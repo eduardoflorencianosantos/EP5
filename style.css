@@ -162,7 +162,7 @@ main {
 
 /* Cards das camisas*/
 .card {
-    border: 3px solid #000000;
+    border: 2px solid #000000;
     border-radius: 10px;
     padding: 10px;
     width: 300px;
@@ -176,10 +176,9 @@ main {
     background-color: #DCDCDC;
 }
 
-/* Camisa dá página dos produtos */
+/* Camisa da página dos produtos */
 #sem-borda {
     border: none;
-    border-radius: none;
 }
 
 /* Imagem dos cards*/
@@ -352,6 +351,23 @@ fieldset {
     border: 0;
 }
 
+/* Botão de selecionar */
+#tamanho {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Botão de selecionar */
+#personalizar {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Botão de selecionar */
+#quantidade {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsivivdade */
