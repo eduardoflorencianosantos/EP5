@@ -96,8 +96,6 @@ li img {
     width: 50px;
 }
 
-
-
 /* Menu */
 .nav_mobile ul{
     list-style: none;
@@ -174,11 +172,6 @@ main {
 /* Cor dos cards dos conjuntos */
 #cinza {
     background-color: #DCDCDC;
-}
-
-/* Camisa da página dos produtos */
-#sem-borda {
-    border: none;
 }
 
 /* Imagem dos cards*/
@@ -341,6 +334,11 @@ footer {
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Página do produto */
 
+/* Camisa da página dos produtos */
+#sem-borda {
+    border: none;
+}
+
 /* Borda do tamanho */
 fieldset {
     border: 0;
@@ -364,30 +362,55 @@ fieldset {
     background-color: #ffffff;
 }
 
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+/* Formulário */
+
+.borda-formulario {
+    border-radius: 10px;
+    border: 3px #000000 solid;
+}
+
+.borda-formulario {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+.letra_normal label{
+    font-weight: 100;
+}
+
+.bloco label{
+    display: block;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.letra_normal input{
+    box-shadow: none;
+}
+
+fieldset{
+    border: 0;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsivivdade */
 
 /* Tela de tablet */
-@media only screen and (max-width: 820px) {
-    body {
-        grid-template-areas: 
-        "cabeca cabeca"
-        "braco braco"
-        "corpo corpo"
-        "perna perna";
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 50px 500px 200px;
-    }
-}
-
-/* Tela de celular */
-@media only screen and (max-width: 480px) {
-    body {
+@media (max-width: 880px){
+    body{
         grid-template-areas: 
         "cabeca"
+        "braco"
         "corpo"
         "perna";
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 500px 100px;
     }
 }
