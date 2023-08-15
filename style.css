@@ -1,3 +1,5 @@
+/* Página principal */
+
 /* Fonte das letras */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -364,7 +366,7 @@ fieldset {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
-/* Formulário */
+/* Página do formulário */
 
 .borda-formulario {
     border-radius: 10px;
@@ -402,6 +404,10 @@ fieldset{
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
+/* Página do carrinho */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsivivdade */
 
 /* Tela de tablet */
@@ -413,4 +419,24 @@ fieldset{
         "corpo"
         "perna";
     }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 
+    "cabeca cabeca cabeca"
+    "corpo corpo corpo"
+    "perna perna perna";
+}
+
+header {
+    grid-area: cabeca;
+}
+
+main {
+    grid-area: corpo;
+}
+
+footer {
+    grid-area: perna;
 }

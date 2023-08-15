@@ -17,7 +17,7 @@
     <title>Cadastro - Fut Unity</title>
 </head>
 
-<body>
+<body class="formulario">
     <!-- Começo do header -->
     <header>
         <nav class="navbar">
@@ -34,34 +34,60 @@
         </nav>
     </header>
     <!-- Fim do header -->
+    <!-- Começo do main -->
     <main>
+        <!-- Começo do formulário -->
         <div class="borda-formulario">
             <div>
                 <h1>Cadastre-se</h1>
             </div>
             <form action="#" method="post">
+                <!-- Nome -->
                 <fieldset>
                     <div class="bloco">
-                        <label for="nome_aluno">Nome</label>
-                        <input type="text" name="nome_aluno" id="nome_aluno">
+                        <label for="nome_aluno">Nome completo</label>
+                        <input type="text" name="nome_aluno" id="nome_aluno" placeholder="Ex: Wagner Jorcuvich">
                     </div>
                 </fieldset>
+                <!-- Fim do nome -->
+                <!-- Começo do telefone -->
+                <fieldset>
+                    <div class="bloco">
+                        <label for="nome_aluno">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Ex: 11971923030">
+                    </div>
+                </fieldset>
+                <!-- Começo do e-mail -->
                 <fieldset>
                     <div class="bloco">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email_aluno" id="email_aluno">
+                        <input type="email" name="email_aluno" id="email_aluno" placeholder="Ex: seunome@email.com">
                     </div>
+                    <!-- Fim do e-mail -->
+                    <!-- Começo da senha -->
                     <div class="bloco">
                         <label for="senha_aluno">Senha</label>
                         <input type="password" name="senha_aluno" id="senha_aluno">
                     </div>
+                    <!-- Fim da senha -->
+                    <!-- Começo do confirmar senha -->
+                    <div class="bloco">
+                        <label for="senha_aluno">Confirmar senha</label>
+                        <input type="password" name="confirmar_senha" id="confirmar_senha">
+                    </div>
+                    <!-- Fim do confirmar senha -->
                 </fieldset>
+                <!-- Começo do botão  -->
                 <fieldset>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Criar uma conta</button>
                 </fieldset>
+                <!-- Fim do botão -->
             </form>
+            <p>Já possui uma conta?<a href="#">Iniciar uma sessão</a></p>
         </div>
+        <!-- Fim do formulário -->
     </main>
+    <!-- Fim do main -->
     <!-- Começo do footer -->
     <footer>
         <div class="container-footer">
