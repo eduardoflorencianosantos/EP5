@@ -12,14 +12,15 @@
 }
 
 /* Estrutura do grid */
-body {
+.pagina_principal {
     display: grid;
     grid-template-areas:
-    "cabeca cabeca cabeca"
-    "braco corpo corpo"
-    "perna perna perna";
+        "cabeca cabeca cabeca"
+        "braco corpo corpo"
+        "perna perna perna";
     grid-template-columns: 400px auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 125px, auto 215px;
+    grid-gap: 2rem;
 }
 
 /* Cabeçalho */
@@ -75,7 +76,6 @@ aside {
     color: inherit;
 }
 
-
 /* */
 .logo {
     margin-right: 50px;
@@ -98,26 +98,40 @@ li img {
     width: 50px;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------*/
 /* Menu */
-.nav_mobile ul{
+
+section {
+    display: none;
+}
+
+/* Modificação nas listas do Menu. Ex: "Perfil, Brasileirão, Europeus, Seleções e Configurações" */
+.nav_mobile ul {
     list-style: none;
     position: absolute;
     top: 50px;
-    width: 100%;
+    width: auto;
 }
 
-/* */
-.nav_mobile img{
+/* Tamanho da imagem do Menu e distância da borda */
+.nav_mobile img {
     width: 40px;
+    margin-top: 3px;
 }
 
-/* */
-.nav_mobile input[type="checkbox"]{
-     display: none;
+/* Remoção a caixinha com o desenho de certinho */
+.nav_mobile input[type="checkbox"] {
+    display: none;
 }
 
-/* */
-.nav_mobile nav{
+/* Parte visual dos links do Menu */
+nav ul li a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+/* Parte visual da borda preta que fica em volta dos links */
+.nav_mobile nav {
     background-color: #000000;
     width: 350px;
     height: 100vh;
@@ -126,35 +140,38 @@ li img {
     transition: all 0.3s;
 }
 
-/* */
-.nav_mobile a{
+/* Modificação dos links. Ex: "Perfil, Brasileirão, Europeus, Seleções e Configurações" */
+.nav_mobile a {
     display: block;
     padding: 20px 5px;
     text-decoration: none;
+    width: auto;
+    height: auto;
 }
 
-/* */
-.nav_mobile label{
+/* Parte visual do quadradinho (que está escondido dentro da imagem dos "três barras")*/
+.nav_mobile label {
     position: absolute;
     z-index: 1;
 }
 
-/* */
-.nav_mobile input[type="checkbox"]:checked ~ nav{
+/* Faça que o Menu seja clicável */
+.nav_mobile input[type="checkbox"]:checked~nav {
     transform: translateX(350px);
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------*/
 /* Barra de pesquisa */
 
-/*  */
-.search-container{
+/* Parte visual da "Barra de Pesquisa" */
+.search-container {
     width: 490px;
     display: block;
     margin: 0 auto;
-  }
+}
 
-/*  */
-input#search-bar{
+/* Estrutura da "Barra de Pesquisa" */
+input#search-bar {
     margin: 0 auto;
     width: 100%;
     height: 45px;
@@ -162,35 +179,42 @@ input#search-bar{
     font-size: 1rem;
     border: 1px solid #D0CFCE;
     outline: none;
-    &:focus{
-    border: 1px solid #000000;
-    transition: 0.35s ease;
-    color: #000000;
-    &::-webkit-input-placeholder{
-    transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &::-moz-placeholder {
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &:-ms-placeholder {
-       transition: opacity 0.45s ease; 
-         opacity: 0;
-       }    
-     }
-   }
+    border-radius: 20px;
 
-/*  */
-  .search-icon{
+    /* Parte visual da barra */
+    &:focus {
+        border: 1px solid #000000;
+        transition: 0.35s ease;
+        color: #000000;
+
+        &::-webkit-input-placeholder {
+            transition: opacity 0.45s ease;
+            opacity: 0;
+        }
+
+        &::-moz-placeholder {
+            transition: opacity 0.45s ease;
+            opacity: 0;
+        }
+
+        &:-ms-placeholder {
+            transition: opacity 0.45s ease;
+            opacity: 0;
+        }
+    }
+}
+
+/* Posicionamento da "Barra de Pesquisa */
+.search-icon {
     position: relative;
     float: right;
     width: 75px;
     height: 75px;
     top: -62px;
     right: -45px;
-  }
+}
 
+/* ---------------------------------------------------------------------------------------------------------------------*/
 /* Estrutura das camisas */
 main {
     display: flex;
@@ -247,9 +271,10 @@ main {
 
 /* Cor do botão em transição*/
 .texto a:hover {
-    background-color: #008000;
+    background-color: green;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------- */
 /* Rodapé */
 footer {
     /* Cor de fundo preto */
@@ -383,6 +408,25 @@ footer {
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Página do produto */
 
+/* Estrutura do grid */
+.pagina_produto {
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "braco corpo corpo"
+        "perna perna perna";
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: 125px, auto 215px;
+    grid-gap: 2rem;
+}
+
+/* Espaço da borda e dos lados */
+.espaco_borda {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
 /* Camisa da página dos produtos */
 #sem-borda {
     border: none;
@@ -415,75 +459,241 @@ fieldset {
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Página do formulário */
 
-.borda-formulario {
-    border-radius: 10px;
-    border: 3px #000000 solid;
+/* Estrutura do grid */
+.pagina_formulario {
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "braco corpo corpo"
+        "perna perna perna";
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: 125px, auto 215px;
+    grid-gap: 2rem;
 }
 
-.borda-formulario {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.pagina_formulario {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-label{
+/* Formato fora do formulário */
+.box {
+    display: flex;
+    width: 930px;
+}
+
+/* Formato dentro do formulário */
+.form-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 20px;
+    border: 2px #000000 solid;
+}
+
+/* Parte visual do "Criar uma conta" */
+.form-box h2 {
+    font-size: 30px;
+}
+
+/* Parte visual do "Já possui uma conta?" */
+.form-box p {
     font-weight: bold;
+    color: #3D3D3D;
 }
 
-.letra_normal label{
-    font-weight: 100;
+/* Palavra "Login" */
+.form-box p a {
+    color: #008000;
+    text-decoration: none;
 }
 
-.bloco label{
+/* Largura do formulario */
+.form-box form {
+    margin: 20px 0;
+}
+
+/* Altura do formulario */
+form .input-group {
+    margin-bottom: 15px;
+}
+
+/* Parte visual das palavras acima das colunas. Ex: "Nome completo, e-mail, telefone, senha e confirmar senha" */
+form .input-group label {
+    color: #3D3D3D;
+    font-weight: bold;
     display: block;
+    margin-bottom: 5px;
 }
 
-input, select, textarea, button{
-    border-radius: 5px;
+/* Parte visual das colunas. Ex: "Digite o seu nome completo, digite o seu email, digite o seu telefone, digite a sua senha e confirme a senha  */
+form .input-group input {
+    width: 100%;
+    height: 47px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    transition: all 0.4s ease;
 }
 
-.letra_normal input{
-    box-shadow: none;
+/* Animação das colunas quando começa a digitar */
+form .input-group input:focus {
+    border-color: #000000;
 }
 
-fieldset{
-    border: 0;
+/* Estrutura da "Senha e Confirmar Senha" */
+.w50 {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+/* Botão "Cadastrar" */
+form .input-group button {
+    width: 100%;
+    height: 47px;
+    background: #000000;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Parte visual do botão "Cadastrar" em transição*/
+.animacao_verde:hover {
+    background-color: #008000;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Página do carrinho */
 
+/* Estrutura do grid */
+.pagina_carrinho {
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "braco corpo corpo"
+        "perna perna perna";
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: 125px, auto 215px;
+    grid-gap: 2rem;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsivivdade */
 
-/* Tela de tablet */
-@media (max-width: 880px){
-    body{
-        grid-template-areas: 
-        "cabeca"
-        "braco"
-        "corpo"
-        "perna";
+/* Tela de computador */
+@media (max-width:2000px) {
+
+    /* Remoção da lupa */
+    .lupa {
+        display: none;
     }
 }
 
-.formulario {
-    display: grid;
-    grid-template-columns: 
-    "cabeca cabeca cabeca"
-    "corpo corpo corpo"
-    "perna perna perna";
+/* Tela de tablet */
+@media (max-width:820px) {
+
+    /* Aparição do <section> */
+    section {
+        display: block;
+    }
+
+    .box {
+        width: 700px;
+    }
+
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Aparição da lupa */
+    .lupa {
+        display: block;
+    }
+
+    /* Remoção da logo */
+    .logo {
+        display: none;
+    }
+
+    /* Remoção da barra de pesquisa */
+    .search-container {
+        display: none;
+    }
+
+    /* Remoção do ícone do carrinho */
+    .icone_carrinho {
+        display: none;
+    }
+
+    /* Remoção do ícone de login */
+    .icone_login {
+        display: none;
+    }
+
+    /* Remoção das camisas */
+    #id_camisas {
+        display: none;
+    }
+
+    section {
+        display: flex;
+    }
 }
 
-header {
-    grid-area: cabeca;
-}
+/* Tela de celular */
+@media (max-width:480px) {
 
-main {
-    grid-area: corpo;
-}
+    /* Aparição do <section> */
+    section {
+        display: block;
+    }
 
-footer {
-    grid-area: perna;
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Aparição da lupa */
+    .lupa {
+        display: block;
+    }
+
+    /* Remoção da logo */
+    .logo {
+        display: none;
+    }
+
+    /* Remoção da barra de pesquisa */
+    .search-container {
+        display: none;
+    }
+
+    /* Remoção do ícone do carrinho */
+    .icone_carrinho {
+        display: none;
+    }
+
+    /* Remoção do ícone de login */
+    .icone_login {
+        display: none;
+    }
+
+    /* Remoção das camisas */
+    #id_camisas {
+        display: none;
+    }
+
+    section {
+        display: flex;
+    }
 }

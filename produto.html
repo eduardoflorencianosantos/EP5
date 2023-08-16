@@ -17,9 +17,9 @@
     <title>Camisa Barcelona | Nike | Masculino - Fut Unity</title>
 </head>
 
-<body>
+<body class="pagina_produto">
     <!-- Começo do header -->
-    <header>
+    <header class="header_produto">
         <nav class="navbar">
             <a href="index.html" class="logo"><img src="Imagens/logo.png"></a>
             <input type="checkbox" id="toggler">
@@ -28,40 +28,89 @@
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="O que você está buscando?">
             </form>
-            <!-- Fim da barra de pesquisa --> 
+            <!-- Fim da barra de pesquisa -->
+            <!-- Icones -->
             <div class="menu">
                 <ul class="list">
+                    <!-- Ícone da lupa -->
+                    <li><a href="#"><img src="Imagens/lupa.png" class="lupa"></a></li>
+                    <!-- Fim do ícone da lupa -->
                     <li><a href="#"><img src="Imagens/sino.png"></a></li>
-                    <li><a href="formulario.html"><img src="Imagens/login.png"></a></li>
-                    <li><a href="carrinho.html"><img src="Imagens/carrinho.png"></a></li>
+                    <li><a href="formulario.html" class="icone_login"><img src="Imagens/login.png"></a></li>
+                    <li><a href="carrinho.html" class="icone_carrinho"><img src="Imagens/carrinho.png"></a></li>
                 </ul>
             </div>
+            <!-- Fim dos ícones -->
         </nav>
-    </header>
-    <!-- Fim do header -->
-    <aside>
-        <!-- Começo do card -->
-            <div class="card" id="sem-borda">
-                <div>
-                    <img src="Imagens/barcelona.png" alt="Camisa do Barcelona">
-                </div>
-                <div>
-                    <img src="Imagens/costas-barcelona.png" alt="Camisa do Barcelona">
-                </div>
+        <!-- Seção do Menu -->
+        <section class="menu_produto">
+            <!-- Começo do menu -->
+            <div class="nav_mobile">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagens/menu.png">
+                </label>
+                <!-- Links para as páginas no Menu -->
+                <nav>
+                    <ul>
+                        <li><a href="formulario.html">Perfil</a></li>
+                        <li><a href="#">Brasileirão</a></li>
+                        <li><a href="#">Europa</a></li>
+                        <li><a href="#">Seleções</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="#">Configurações</a></li>
+                    </ul>
+                </nav>
+                <!-- Fim dos links das páginas do Menu -->
             </div>
+            <!-- Fim do menu -->
+        </section>
+        <!-- Fim da seção do Menu -->
+    </header>
+    <aside class="aside_produto">
+        <!-- Começo do card -->
+        <div class="card" id="sem-borda">
+            <div>
+                <img src="Imagens/barcelona.png" alt="Camisa do Barcelona">
+            </div>
+            <div>
+                <img src="Imagens/costas-barcelona.png" alt="Camisa do Barcelona">
+            </div>
+        </div>
         <!-- Fim do card-->
     </aside>
-    <main>
+    <main class="main_produto">
         <!-- Informações do produto -->
-        <div>
+        <div class="espaco_borda">
             <h1>Camisa Barcelona | Nike | Masculino</h1>
             <h1 class="verde">R$ 149,90</h1>
-            <h3>ou 3x de R$ 49,97</h3>
+            <h3>ou 12x de R$ 14,50</h3>
             <p>Ver mais detalhes</p>
         </div>
         <!-- Fim das informações do produto -->
+        <!-- Informações do produto -->
+        <div class="espaco_borda">
+            <p>Personalize com o nome e número do jogador que preferir, ou ainda se preferir com seu nome.
+                Deixar nome e número dos jogadores nas observações na finalização do pedido.</p>
+            <h3 class="verde">Tamanhos aproximados:</h3>
+            <h3 class="verde">Masculino</h3>
+            <p>P: 53x69 cm (LxA)</p>
+            <p>M: 55x71 cm (LxA)</p>
+            <p>G: 57x73 cm (LxA)</p>
+            <p>GG: 58x75 cm (LXA) </p>
+            <p>GGG: 60x78 cm (LXA)</p>
+        </div>
+        <!-- Fim das informações do produto -->
+        <div class="espaco_borda">
+            <h3 class="verde">Suporte ao cliente</h3>
+            <p>> Enviamos para todo Brasil com seguro e código de rastreamento online.</p>
+            <p>> Produto com garantia contra defeito de Fabrica.</p>
+            <p>> Processo de pagamento totalmente seguro, por boleto bancário, débito online ou cartão de crédito.</p>
+            <p>> Suporte ao cliente antes e após a compra.</p>
+            <p>> Site protegido com os melhores certificados de segurança.</p>
+        </div>
         <!-- Tamanho -->
-        <fieldset>
+        <fieldset class="espaco_borda">
             <label for="tamanho">Tamanho</label>
             <select name="tamanho" id="tamanho">
                 <option>P</option>
@@ -73,7 +122,7 @@
         </fieldset>
         <!-- Fim do tamanho -->
         <!-- Personalização -->
-        <fieldset>
+        <fieldset class="espaco_borda">
             <label for="personalizar">Personalize aqui:</label>
             <select name="personalizar" id="personalizar">
                 <option>Sem personalização</option>
@@ -82,7 +131,7 @@
         </fieldset>
         <!-- Fim da personalização -->
         <!-- Quantidade -->
-        <fieldset>
+        <fieldset class="espaco_borda">
             <label for="quantidade">Quantidade</label>
             <select name="quantidade" id="quantidade">
                 <option>1</option>
@@ -95,38 +144,21 @@
         <!-- Fim da quantidade -->
         <!-- Botões -->
         <div>
+            <!-- Botão (Adicionar ao carrinho) -->
             <div class="texto">
                 <a href="carrinho.html">Adicionar ao carrinho</a>
             </div>
+            <!-- Fim do botão -->
+            <!-- Botão (Comprar) -->
             <div class="texto">
                 <a href="formulario.html">Comprar</a>
             </div>
+            <!-- Fim do botão -->
         </div>
         <!-- Fim dos botões -->
-        <!-- Informações do produto -->
-        <div>
-            <p>Personalize com o nome e número do jogador que preferir, ou ainda se preferir com seu nome.
-                Deixar nome e número dos jogadores nas observações na finalização do pedido.</p>
-                <h3 class="verde">Tamanhos aproximados:</h3>
-                <h3 class="verde">Masculino</h3>
-                <p>P: 53x69 cm (LxA)</p>
-                <p>M: 55x71 cm (LxA)</p>
-                <p>G: 57x73 cm (LxA)</p>
-                <p>GG: 58x75 cm (LXA) </p>
-                <p>GGG: 60x78 cm (LXA)</p>
-        </div>
-        <!-- Fim das informações do produto -->
-        <div>
-            <h3 class="verde">Suporte ao cliente</h3>
-                <p>> Enviamos para todo Brasil com seguro e código de rastreamento online.</p>
-                <p>> Produto com garantia contra defeito de Fabrica.</p>
-                <p>> Processo de pagamento totalmente seguro, por boleto bancário, débito online ou cartão de crédito.</p>
-                <p>> Suporte ao cliente antes e após a compra.</p>
-                <p>> Site protegido com os melhores certificados de segurança.</p>
-        </div>
     </main>
     <!-- Começo do footer -->
-    <footer>
+    <footer class="footer_produto">
         <div class="container-footer">
             <div class="row-footer">
                 <!-- Informações da loja -->
@@ -178,7 +210,7 @@
                             <!-- Twitter -->
                             <a href="#" class="footer-link" id="twitter">
                                 <i class="fa-brands fa-twitter"></i>
-                            </a>                            
+                            </a>
                         </div>
                     </ul>
                 </div>

@@ -17,7 +17,7 @@
     <title>Cadastro - Fut Unity</title>
 </head>
 
-<body class="formulario">
+<body class="pagina_formulario">
     <!-- Começo do header -->
     <header>
         <nav class="navbar">
@@ -28,67 +28,102 @@
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="O que você está buscando?">
             </form>
-            <!-- Fim da barra de pesquisa -->             
+            <!-- Fim da barra de pesquisa -->
+            <!-- Ícones -->
             <div class="menu">
                 <ul class="list">
+                    <!-- Ícone da lupa -->
+                    <li><a href="#"><img src="Imagens/lupa.png" class="lupa"></a></li>
+                    <!-- Fim do ícone da lupa -->
                     <li><a href="#"><img src="Imagens/sino.png"></a></li>
-                    <li><a href="formulario.html"><img src="Imagens/login.png"></a></li>
-                    <li><a href="carrinho.html"><img src="Imagens/carrinho.png"></a></li>
+                    <li><a href="carrinho.html" class="icone_carrinho"><img src="Imagens/carrinho.png"></a></li>
                 </ul>
             </div>
+            <!-- Fim dos ícones -->
         </nav>
+        <!-- Seção do Menu -->
+        <section>
+            <!-- Começo do menu -->
+            <div class="nav_mobile">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagens/menu.png">
+                </label>
+                <!-- Links para as páginas no Menu -->
+                <nav>
+                    <ul>
+                        <li><a href="formulario.html">Perfil</a></li>
+                        <li><a href="#">Brasileirão</a></li>
+                        <li><a href="#">Europa</a></li>
+                        <li><a href="#">Seleções</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="#">Configurações</a></li>
+                    </ul>
+                </nav>
+                <!-- Fim dos links das páginas do Menu -->
+            </div>
+            <!-- Fim do menu -->
+        </section>
+        <!-- Fim da seção do Menu -->
     </header>
     <!-- Fim do header -->
     <!-- Começo do main -->
     <main>
         <!-- Começo do formulário -->
-        <div class="borda-formulario">
-            <div>
-                <h1>Login</h1>
-            </div>
-            <form action="#" method="post">
-                <!-- Nome -->
-                <fieldset>
-                    <div class="bloco">
-                        <label for="nome_aluno">Nome completo</label>
-                        <input type="text" name="nome_aluno" id="nome_aluno" placeholder="Ex: Wagner Jorcuvich">
+        <div class="box">
+            <div class="form-box">
+                <h2>Criar Conta</h2>
+                <p> Já possui uma conta? <a href="#"> Login </a> </p>
+                <form action="#">
+                    <!-- Nome Completo -->
+                    <div class="input-group">
+                        <label for="nome"> Nome Completo</label>
+                        <!-- Coluna -->
+                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
+                        <!-- Fim da coluna -->
                     </div>
-                </fieldset>
-                <!-- Fim do nome -->
-                <!-- Começo do telefone -->
-                <fieldset>
-                    <div class="bloco">
-                        <label for="nome_aluno">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" placeholder="Ex: 11971923030">
-                    </div>
-                </fieldset>
-                <!-- Começo do e-mail -->
-                <fieldset>
-                    <div class="bloco">
+                    <!-- Fim do Nome Completo -->
+                    <!-- E-mail -->
+                    <div class="input-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email_aluno" id="email_aluno" placeholder="Ex: seunome@email.com">
+                        <!-- Coluna -->
+                        <input type="email" id="email" placeholder="Digite o seu email" required>
+                        <!-- Fim da coluna -->
                     </div>
-                    <!-- Fim do e-mail -->
-                    <!-- Começo da senha -->
-                    <div class="bloco">
-                        <label for="senha_aluno">Senha</label>
-                        <input type="password" name="senha_aluno" id="senha_aluno">
+                    <!-- Fim do E-mail -->
+                    <!-- Telefone -->
+                    <div class="input-group">
+                        <label for="telefone">Telefone</label>
+                        <!-- Coluna -->
+                        <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+                        <!-- Fim da coluna -->
                     </div>
-                    <!-- Fim da senha -->
-                    <!-- Começo do confirmar senha -->
-                    <div class="bloco">
-                        <label for="senha_aluno">Confirmar senha</label>
-                        <input type="password" name="confirmar_senha" id="confirmar_senha">
+                    <!-- Fim do telefone -->
+                    <!-- Senha -->
+                    <div class="input-group w50">
+                        <label for="senha">Senha</label>
+                        <!-- Coluna -->
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                        <!-- Fim da coluna -->
                     </div>
-                    <!-- Fim do confirmar senha -->
-                </fieldset>
-                <!-- Começo do botão  -->
-                <fieldset>
-                    <button type="submit">Criar uma conta</button>
-                </fieldset>
-                <!-- Fim do botão -->
-            </form>
-            <p>Já possui uma conta?<a href="#">Iniciar uma sessão</a></p>
+                    <!-- Fim da Senha -->
+                    <!-- Confirmar Senha -->
+                    <div class="input-group w50">
+                        <label for="Confirmarsenha">Confirmar Senha</label>
+                        <!-- Coluna -->
+                        <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
+                        <!-- Fim da coluna -->
+                    </div>
+                    <!-- Fim do Confirmar Senha -->
+                    <!-- Cadastrar -->
+                    <div class="input-group">
+                        <!-- Botão -->
+                        <button class="animacao_verde">Cadastrar</button>
+                        <!-- Fim do botão -->
+                    </div>
+                    <!-- Fim do Cadastrar -->
+                </form>
+            </div>
         </div>
         <!-- Fim do formulário -->
     </main>
@@ -146,7 +181,7 @@
                             <!-- Twitter -->
                             <a href="#" class="footer-link" id="twitter">
                                 <i class="fa-brands fa-twitter"></i>
-                            </a>                            
+                            </a>
                         </div>
                     </ul>
                 </div>

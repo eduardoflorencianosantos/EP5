@@ -17,9 +17,9 @@
     <title>Fut Unity - Camisas de time</title>
 </head>
 
-<body>
+<body class="pagina_principal">
     <!-- Começo do header -->
-    <header>
+    <header class="header_principal">
         <nav class="navbar">
             <a href="#" class="logo"><img src="Imagens/logo.png"></a>
             <input type="checkbox" id="toggler">
@@ -28,38 +28,48 @@
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="O que você está buscando?">
             </form>
-            <!-- Fim da barra de pesquisa -->  
+            <!-- Fim da barra de pesquisa -->
+            <!-- Ícones -->
             <div class="menu">
                 <ul class="list">
+                    <!-- Ícone da lupa -->
+                    <li><a href="#"><img src="Imagens/lupa.png" class="lupa"></a></li>
+                    <!-- Fim do ícone da lupa -->
                     <li><a href="#"><img src="Imagens/sino.png"></a></li>
-                    <li><a href="formulario.html"><img src="Imagens/login.png"></a></li>
-                    <li><a href="carrinho.html"><img src="Imagens/carrinho.png"></a></li>
+                    <li><a href="formulario.html" class="icone_login"><img src="Imagens/login.png"></a></li>
+                    <li><a href="carrinho.html" class="icone_carrinho"><img src="Imagens/carrinho.png"></a></li>
                 </ul>
             </div>
+            <!-- Fim dos ícones -->
         </nav>
-        <!-- Começo do menu -->
+        <!-- Seção do Menu -->
         <section>
+            <!-- Começo do menu -->
             <div class="nav_mobile">
                 <input type="checkbox" id="menu">
                 <label for="menu">
                     <img src="Imagens/menu.png">
                 </label>
+                <!-- Links para as páginas no Menu -->
                 <nav>
                     <ul>
                         <li><a href="formulario.html">Perfil</a></li>
-                        <li><a href="#">Clubes Brasileiros</a></li>
-                        <li><a href="#">Clubes Europeus</a></li>
+                        <li><a href="#">Brasileirão</a></li>
+                        <li><a href="#">Europa</a></li>
                         <li><a href="#">Seleções</a></li>
                         <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="#">Configurações</a></li>
                     </ul>
                 </nav>
+                <!-- Fim dos links das páginas do Menu -->
             </div>
+            <!-- Fim do menu -->
         </section>
-        <!-- Fim do menu -->
+        <!-- Fim da seção do Menu -->
     </header>
     <!-- Fim do header -->
     <!-- Começo dos conjuntos -->
-    <aside>
+    <aside class="aside_principal">
         <div class="elemento_pai">
             <!-- Começo do card -->
             <div class="card" id="cinza">
@@ -142,7 +152,7 @@
 
     </aside>
     <!-- Fim dos conjuntos -->
-    <main>
+    <main id="main_camisas" class="main_principal">
         <div class="elemento_pai">
             <!-- Começo do card -->
             <div class="card">
@@ -165,7 +175,7 @@
                 <p>Camisa Seleção Argentina | Adidas | Masculino</p>
                 <div class="texto">
                     <h3 class="verde">R$ 149,90</h3>
-                    <h3>ou 3x de R$ 49,97</h3>
+                    <h3>ou 12x de R$ 14,50</h3>
                     <a href="produto.html">Saiba mais</a>
                 </div>
             </div>
@@ -381,7 +391,7 @@
         </div>
     </main>
     <!-- Começo do footer -->
-    <footer>
+    <footer class="footer_principal">
         <div class="container-footer">
             <div class="row-footer">
                 <!-- Informações da loja -->

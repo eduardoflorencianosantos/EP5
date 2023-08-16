@@ -17,7 +17,7 @@
     <title>Carrinho de compras - Fut Unity</title>
 </head>
 
-<body>
+<body class="pagina_carrinho">
     <!-- Começo do header -->
     <header>
         <nav class="navbar">
@@ -28,15 +28,43 @@
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="O que você está buscando?">
             </form>
-            <!-- Fim da barra de pesquisa --> 
+            <!-- Fim da barra de pesquisa -->
+            <!-- Ícones -->
             <div class="menu">
                 <ul class="list">
+                    <!-- Ícone da lupa -->
+                    <li><a href="#"><img src="Imagens/lupa.png" class="lupa"></a></li>
+                    <!-- Fim do ícone da lupa -->
                     <li><a href="#"><img src="Imagens/sino.png"></a></li>
-                    <li><a href="formulario.html"><img src="Imagens/login.png"></a></li>
-                    <li><a href="carrinho.html"><img src="Imagens/carrinho.png"></a></li>
+                    <li><a href="formulario.html" class="icone_login"><img src="Imagens/login.png"></a></li>
                 </ul>
             </div>
+            <!-- Fim dos ícones -->
         </nav>
+        <!-- Seção do Menu -->
+        <section>
+            <!-- Começo do menu -->
+            <div class="nav_mobile">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagens/menu.png">
+                </label>
+                <!-- Links para as páginas no Menu -->
+                <nav>
+                    <ul>
+                        <li><a href="formulario.html">Perfil</a></li>
+                        <li><a href="#">Brasileirão</a></li>
+                        <li><a href="#">Europa</a></li>
+                        <li><a href="#">Seleções</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="#">Configurações</a></li>
+                    </ul>
+                </nav>
+                <!-- Fim dos links das páginas do Menu -->
+            </div>
+            <!-- Fim do menu -->
+        </section>
+        <!-- Fim da seção do Menu -->
     </header>
     <!-- Fim do header -->
     <aside>
@@ -46,85 +74,75 @@
                 <img src="Imagens/barcelona.png" alt="Camisa do Brcelona">
             </div>
             <p>Camisa Barcelona | Nike | Masculino</p>
-            </div>
+        </div>
         </div>
         <!-- Fim do card-->
-        <!-- Começo do card -->
-        <div class="card" id="sem-borda">
-            <div>
-                <img src="Imagens/italia.png" alt="Camisa do Brcelona">
+        <main>
+            <h2>Subtotal: R$ 149,90</h2>
+        </main>
+        <!-- Começo do footer -->
+        <footer>
+            <div class="container-footer">
+                <div class="row-footer">
+                    <!-- Informações da loja -->
+                    <div class="footer-col">
+                        <h4>Sobre a loja</h4>
+                        <ul>
+                            <li>Somos a Fut Unity, uma loja apaixonada por futebol e comprometida em fornecer aos nossos
+                                clientes os melhores produtos e serviços. Nós entendemos que uma camisa de time não é
+                                apenas
+                                um uniforme, mas sim uma parte fundamental da identidade dos torcedores.</li>
+                        </ul>
+                    </div>
+                    <!-- Fim das informações da loja -->
+                    <!-- Créditos para não ser processado -->
+                    <div class="footer-col">
+                        <h4>Créditos</h4>
+                        <ul>
+                            <li>Fontes: Fonte Awesome</li>
+                            <li>Fontes: Icons8</li>
+                            <li>Camisas: Fifa Style</li>
+                            <li>Camisas: Loja do Capita</li>
+                        </ul>
+                    </div>
+                    <!-- Fim dos créditos da loja -->
+                    <!-- Meios de contato -->
+                    <div class="footer-col">
+                        <h4>Contatos</h4>
+                        <ul>
+                            <li>WhatsApp: 5545984306478</li>
+                            <li>Telefone: (45) 915303929</li>
+                            <li>Email: atendimento@fut.unity.com.br</li>
+                            <li>Foz do Iguaçu - PR</li>
+                        </ul>
+                    </div>
+                    <!-- Fim dos meios de contato -->
+                    <!-- Redes sociais -->
+                    <div class="footer-col">
+                        <h4>Redes sociais</h4>
+                        <ul>
+                            <!-- Redes sociais -->
+                            <div id="footer_social_media">
+                                <!-- Facebook -->
+                                <a href="#" class="footer-link" id="facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <!-- Instagram -->
+                                <a href="#" class="footer-link" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <!-- Twitter -->
+                                <a href="#" class="footer-link" id="twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <!-- Fim das redes socias -->
+                </div>
             </div>
-            <p>Camisa Barcelona | Nike | Masculino</p>
-            </div>
-        </div>
-        <!-- Fim do card-->
-
-    </aside>
-    <main>
-        <h2>Total: 149,90</h2>
-    </main>
-    <!-- Começo do footer -->
-    <footer>
-        <div class="container-footer">
-            <div class="row-footer">
-                <!-- Informações da loja -->
-                <div class="footer-col">
-                    <h4>Sobre a loja</h4>
-                    <ul>
-                        <li>Somos a Fut Unity, uma loja apaixonada por futebol e comprometida em fornecer aos nossos
-                            clientes os melhores produtos e serviços. Nós entendemos que uma camisa de time não é apenas
-                            um uniforme, mas sim uma parte fundamental da identidade dos torcedores.</li>
-                    </ul>
-                </div>
-                <!-- Fim das informações da loja -->
-                <!-- Créditos para não ser processado -->
-                <div class="footer-col">
-                    <h4>Créditos</h4>
-                    <ul>
-                        <li>Fontes: Fonte Awesome</li>
-                        <li>Fontes: Icons8</li>
-                        <li>Camisas: Fifa Style</li>
-                        <li>Camisas: Loja do Capita</li>
-                    </ul>
-                </div>
-                <!-- Fim dos créditos da loja -->
-                <!-- Meios de contato -->
-                <div class="footer-col">
-                    <h4>Contatos</h4>
-                    <ul>
-                        <li>WhatsApp: 5545984306478</li>
-                        <li>Telefone: (45) 915303929</li>
-                        <li>Email: atendimento@fut.unity.com.br</li>
-                        <li>Foz do Iguaçu - PR</li>
-                    </ul>
-                </div>
-                <!-- Fim dos meios de contato -->
-                <!-- Redes sociais -->
-                <div class="footer-col">
-                    <h4>Redes sociais</h4>
-                    <ul>
-                        <!-- Redes sociais -->
-                        <div id="footer_social_media">
-                            <!-- Facebook -->
-                            <a href="#" class="footer-link" id="facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="#" class="footer-link" id="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <!-- Twitter -->
-                            <a href="#" class="footer-link" id="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>                            
-                        </div>
-                    </ul>
-                </div>
-                <!-- Fim das redes socias -->
-            </div>
-        </div>
-    </footer>
-    <!-- Fim do footer -->
+        </footer>
+        <!-- Fim do footer -->
 </body>
 
 </html>
