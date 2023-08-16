@@ -641,7 +641,7 @@ form .input-group button {
     }
 
     /* Remoção das camisas */
-    #id_camisas {
+    #main_camisas {
         display: none;
     }
 
@@ -689,7 +689,7 @@ form .input-group button {
     }
 
     /* Remoção das camisas */
-    #id_camisas {
+    #main_camisas {
         display: none;
     }
 
