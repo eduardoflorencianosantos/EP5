@@ -426,7 +426,6 @@ footer {
     margin-left: 20px;
 }
 
-
 /* Camisa da página dos produtos */
 #sem-borda {
     border: none;
@@ -455,7 +454,6 @@ fieldset {
     background-color: #ffffff;
 }
 
-
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Página do formulário */
 
@@ -471,6 +469,7 @@ fieldset {
     grid-gap: 2rem;
 }
 
+/* Estrutura do formulário */
 .pagina_formulario {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -584,6 +583,18 @@ form .input-group button {
     grid-template-columns: 400px auto auto;
     grid-template-rows: 125px, auto 215px;
     grid-gap: 2rem;
+}
+
+/* Borda "Total" */
+#borda_total {
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+/* Parte visual dos preços */
+.verde {
+    /* Cor verde dos preços */
+    color: #008000;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
