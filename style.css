@@ -577,13 +577,29 @@ form .input-group button {
 .pagina_carrinho {
     display: grid;
     grid-template-areas:
-        "cabeca cabeca cabeca"
-        "braco corpo corpo"
-        "perna perna perna";
-    grid-template-columns: 400px auto auto;
-    grid-template-rows: 125px, auto 215px;
-    grid-gap: 2rem;
+        "cabecacar cabecacar cabecacar"
+        "bracocar corpocar corpocar"
+        "pernacar pernacar pernacar";
+    grid-gap: 40px;
 }
+
+
+.header_carrinho {
+    grid-area: cabecacar;
+}
+
+.aside_carrinho {
+    grid-area: bracocar;
+}
+
+.main_carrinho {
+    grid-area: corpocar;
+}
+
+.footer_carrinho {
+    grid-area: pernacar;
+}
+
 
 /* Borda "Total" */
 #borda_total {
